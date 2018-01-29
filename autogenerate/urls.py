@@ -18,7 +18,8 @@ from generate import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^index/',include('generate.urls')),
+    url(r'^har/',include('generate.urls')),
+    url(r'^json/',views.json),
     url(r'^script/',views.script),
     url(r'^upload/',views.upload),
     url(r'^demo/',views.demo)

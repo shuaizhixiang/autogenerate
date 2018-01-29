@@ -7,8 +7,11 @@ from har import generateDataDict
 
 # Create your views here.
 
-def index(request):
+def har(request):
     return render(request,'base.html')
+
+def json(request):
+    return render(request,'json.html')
 
 def script(request):
     return render(request,'script.html')
